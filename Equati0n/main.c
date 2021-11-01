@@ -7,7 +7,9 @@ double discrim(double a, double b, double c) {
 
 void calculate(double a, double b, double c) {
     double discrimResult = discrim(a, b, c);
-    if (a == 0) {
+    if (a == 0 && b == 0) {
+        printf("거짓입니다.\n");
+    } else if (a == 0) {
         printf("방정식의 근: %f\n", -c / b);
     } else {
         if (discrimResult > 0) {
